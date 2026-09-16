@@ -12,8 +12,8 @@ function Services() {
     },
     {
       id: "03",
-      title: "UI/UX Design",
-      desc: "Translating complex requirements into clean, intuitive, and aesthetically pleasing digital experiences.",
+      title: "Website Maintenance & Optimization",
+      desc: "Keeping your website up-to-date, secure, and optimized for performance and SEO.",
     },
   ];
 

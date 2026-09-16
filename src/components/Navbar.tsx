@@ -66,7 +66,7 @@ function Navbar() {
           href="#home"
           className="font-display text-2xl uppercase text-brown flex items-center gap-1"
         >
-          SO
+          PX
           <span className="w-2 h-2 bg-burnt"></span>
         </a>
 

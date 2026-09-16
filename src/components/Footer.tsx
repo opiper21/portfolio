@@ -41,7 +41,7 @@ function Footer() {
           {/* Column 1: Brand */}
           <div>
             <h3 className="font-display text-2xl uppercase mb-4">
-              Sodiq<span className="text-burnt">.</span>Olabode
+              PIPER<span className="text-burnt">X</span>
             </h3>
             <p className="font-mono text-xs uppercase tracking-wider text-cream/60 mb-4">
               Full Stack Web Developer

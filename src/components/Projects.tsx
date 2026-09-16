@@ -2,11 +2,12 @@ function Projects() {
   const projects = [
     {
       id: "01",
-      title: "E-Commerce Platform",
+      title: "Ledgerly",
       category: "Full Stack",
-      desc: "A modern online store with Stripe integration, admin dashboard, and real-time inventory.",
-      tech: ["React", "Node.js", "MongoDB"],
+      desc: "A fintech analytics dashboard with dynamic charts, dark mode, and a fully responsive design.",
+      tech: ["React", "TypeScript", "Tailwind"],
       color: "bg-burnt",
+      link: "https://ledgerly-dashboard.vercel.app",
     },
     {
       id: "02",
@@ -63,63 +64,69 @@ function Projects() {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="group bg-cream border-4 border-brown shadow-retro hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all duration-300 cursor-pointer overflow-hidden"
-            >
-              {/* Project Image/Color Block */}
-              <div
-                className={`relative ${project.color} h-56 border-b-4 border-brown flex items-center justify-center overflow-hidden`}
+          {projects.map((project) => {
+            const CardTag = project.link ? "a" : "div";
+            return (
+              <CardTag
+                key={project.id}
+                {...(project.link
+                  ? { href: project.link, target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+                className="group bg-cream border-4 border-brown shadow-retro hover:shadow-none hover:translate-x-2 hover:translate-y-2 transition-all duration-300 cursor-pointer overflow-hidden block"
               >
-                <span className="font-display text-8xl text-cream/30 absolute top-4 right-4">
-                  {project.id}
-                </span>
-                <span className="font-display text-2xl uppercase text-cream/80 relative z-10 px-4 text-center">
-                  {project.title}
-                </span>
-
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-brown/0 group-hover:bg-brown/90 transition-all duration-300 flex items-center justify-center">
-                  <span className="font-display uppercase text-cream text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-                    View Project →
+                {/* Project Image/Color Block */}
+                <div
+                  className={`relative ${project.color} h-56 border-b-4 border-brown flex items-center justify-center overflow-hidden`}
+                >
+                  <span className="font-display text-8xl text-cream/30 absolute top-4 right-4">
+                    {project.id}
                   </span>
-                </div>
-              </div>
-
-              {/* Project Info */}
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-xs uppercase font-bold text-teal">
-                    {project.category}
+                  <span className="font-display text-2xl uppercase text-cream/80 relative z-10 px-4 text-center">
+                    {project.title}
                   </span>
-                  <span className="font-mono text-xs text-brown/50">
-                    {project.id}/04
-                  </span>
-                </div>
 
-                <h3 className="font-display text-2xl uppercase text-brown mb-3">
-                  {project.title}
-                </h3>
-
-                <p className="text-brown/70 leading-relaxed mb-4">
-                  {project.desc}
-                </p>
-
-                {/* Tech Stack Tags */}
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="font-mono text-xs uppercase px-3 py-1 border-2 border-brown text-brown"
-                    >
-                      {tech}
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-brown/0 group-hover:bg-brown/90 transition-all duration-300 flex items-center justify-center">
+                    <span className="font-display uppercase text-cream text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                      {project.link ? "View Live →" : "View Project →"}
                     </span>
-                  ))}
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
+
+                {/* Project Info */}
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-mono text-xs uppercase font-bold text-teal">
+                      {project.category}
+                    </span>
+                    <span className="font-mono text-xs text-brown/50">
+                      {project.id}/04
+                    </span>
+                  </div>
+
+                  <h3 className="font-display text-2xl uppercase text-brown mb-3">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-brown/70 leading-relaxed mb-4">
+                    {project.desc}
+                  </p>
+
+                  {/* Tech Stack Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="font-mono text-xs uppercase px-3 py-1 border-2 border-brown text-brown"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </CardTag>
+            );
+          })}
         </div>
 
         {/* View All Button */}
