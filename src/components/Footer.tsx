@@ -1,15 +1,15 @@
 function Footer() {
   const currentYear = new Date().getFullYear();
 
+  // 🌐 External links (social profiles)
   const socials = [
-    { name: "GitHub", url: "#" },
-    { name: "LinkedIn", url: "#" },
-    { name: "Twitter", url: "#" },
-    { name: "Email", url: "#" },
+    { name: "GitHub", url: "https://github.com/opiper21" },
+    { name: "Email", url: "mailto:sodiqolabode@gmail.com" },
   ];
 
+  // 🏠 In-page navigation (jumps to sections)
   const links = [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
     { name: "Projects", href: "#projects" },
@@ -41,7 +41,7 @@ function Footer() {
           {/* Column 1: Brand */}
           <div>
             <h3 className="font-display text-2xl uppercase mb-4">
-              PIPER<span className="text-burnt">X</span>
+              Piper<span className="text-burnt">X</span>
             </h3>
             <p className="font-mono text-xs uppercase tracking-wider text-cream/60 mb-4">
               Full Stack Web Developer
@@ -81,6 +81,10 @@ function Footer() {
                 <a
                   key={social.name}
                   href={social.url}
+                  target={
+                    social.url.startsWith("mailto:") ? undefined : "_blank"
+                  }
+                  rel="noopener noreferrer"
                   className="font-mono text-xs uppercase px-4 py-2 border-2 border-cream/40 text-cream/80 hover:bg-mustard hover:text-brown hover:border-mustard transition-all duration-200"
                 >
                   {social.name}
@@ -93,7 +97,7 @@ function Footer() {
         {/* Bottom: Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t-2 border-cream/20">
           <p className="font-mono text-xs uppercase text-cream/60">
-            © {currentYear} SODIQ OLABODE. All rights reserved.
+            © {currentYear} Sodiq Olabode. All rights reserved.
           </p>
           <p className="font-mono text-xs uppercase text-cream/60">
             Built with <span className="text-burnt">♥</span> and lots of coffee
