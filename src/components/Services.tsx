@@ -2,23 +2,31 @@ function Services() {
   const services = [
     {
       id: "01",
-      title: "Frontend Dev",
-      desc: "Building fast, responsive, and interactive user interfaces with React, TypeScript, and modern CSS frameworks.",
+      title: "Frontend Development",
+      desc: "Building fast, responsive, and interactive user interfaces with React, TypeScript, and Tailwind CSS.",
     },
     {
       id: "02",
-      title: "Backend Dev",
-      desc: "Designing scalable APIs, managing databases, and handling server-side logic with Node.js and Express.",
+      title: "Backend Development",
+      desc: "Designing scalable APIs and server-side logic with Node.js, Express, and RESTful architecture.",
     },
     {
       id: "03",
-      title: "Website Maintenance & Optimization",
-      desc: "Keeping your website up-to-date, secure, and optimized for performance and SEO.",
+      title: "Database Design",
+      desc: "Structuring, querying, and managing data with MongoDB and Mongoose for reliable, scalable apps.",
+    },
+    {
+      id: "04",
+      title: "Full Stack Apps",
+      desc: "End-to-end web applications — from the database layer to the polished user interface users interact with.",
     },
   ];
 
   return (
-    <section id="services" className="reveal relative bg-mustard py-24 border-t-4 border-brown">
+    <section
+      id="services"
+      className="reveal relative bg-mustard py-24 border-t-4 border-brown"
+    >
       <div className="absolute inset-0 retro-grid pointer-events-none opacity-20"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -33,7 +41,7 @@ function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service) => (
             <div
               key={service.id}
@@ -42,17 +50,17 @@ function Services() {
               <span className="font-display text-5xl text-burnt block mb-4">
                 {service.id}
               </span>
-              <h3 className="font-display text-2xl uppercase text-brown mb-4">
+              <h3 className="font-display text-xl uppercase text-brown mb-4">
                 {service.title}
               </h3>
-              <p className="text-brown/80 flex-grow leading-relaxed">
+              <p className="text-brown/80 text-sm flex-grow leading-relaxed">
                 {service.desc}
               </p>
 
-              <div className="mt-8 pt-4 border-t-2 border-brown/20">
+              <div className="mt-6 pt-4 border-t-2 border-brown/20">
                 <a
                   href="#contact"
-                  className="font-mono text-sm uppercase font-bold text-teal hover:text-burnt transition-colors inline-flex items-center gap-2"
+                  className="font-mono text-xs uppercase font-bold text-teal hover:text-burnt transition-colors inline-flex items-center gap-2"
                 >
                   Learn More <span>→</span>
                 </a>
