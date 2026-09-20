@@ -85,7 +85,7 @@ function Contact() {
                   <p className="font-mono text-xs uppercase font-bold text-cream/60">
                     Email
                   </p>
-                  <p className="text-cream font-bold">hello@olapiper223@gmail.com</p>
+                  <p className="text-cream font-bold">olapiper223@gmail.com</p>
                 </div>
               </div>
 
