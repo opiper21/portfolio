@@ -7,28 +7,30 @@ function Projects() {
     {
       id: "01",
       title: "Ledgerly — Fintech Dashboard",
-      category: "UI Design",
+      category: "Frontend",
       problem:
         "Fintech products need clean dashboards that make complex data feel simple.",
       solution:
-        "Designed a modern dashboard in Figma with metrics, charts, and an insights panel.",
+        "Designed the dashboard in Figma, then built it in React with TypeScript and Tailwind, including dynamic charts, dark/light mode, and a responsive layout.",
       outcome:
-        "A production-ready design system ready to be built into a live React app.",
-      tech: ["Figma", "UI Design", "Dashboard"],
+        "A fully responsive, component-based dashboard, deployed live with the code public on GitHub.",
+      tech: ["React", "TypeScript", "Tailwind", "Figma"],
       color: "bg-burnt",
-      link: "https://github.com/opiper21",
+      link: "https://ledgerly-dashboard.vercel.app",
     },
     {
       id: "02",
-      title: "Task Management App",
-      category: "Frontend",
-      problem: "Remote teams struggled to coordinate tasks across time zones.",
+      title: "TaskFlow — Task Manager",
+      category: "Full Stack",
+      problem:
+        "Individuals and small teams need a simple, secure place to track their work without heavyweight project tools.",
       solution:
-        "Built a drag-and-drop dashboard with real-time sync and offline support.",
-      outcome: "Adopted by 30+ teams; reduced status meetings by 50%.",
-      tech: ["React", "TypeScript", "Tailwind"],
+        "Built a full-stack task manager with JWT authentication, a REST API, and a responsive React dashboard to create, update, and delete tasks.",
+      outcome:
+        "Fully deployed with a live demo, and the code and README are public on GitHub.",
+      tech: ["React", "TypeScript", "Node.js", "MongoDB"],
       color: "bg-teal",
-      link: "https://github.com/opiper21",
+      link: "https://taskflow-olabode.vercel.app",
     },
     {
       id: "03",
@@ -107,11 +109,9 @@ function Projects() {
                 <span className="font-display text-xl md:text-2xl uppercase text-cream/90 relative z-10 px-4 text-center">
                   {project.title}
                 </span>
-                <div className="absolute inset-0 bg-brown/0 group-hover:bg-brown/90 transition-all duration-300 flex items-center justify-center">
-                  <span className="font-display uppercase text-cream text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-                    View Project →
-                  </span>
-                </div>
+                <span className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 whitespace-nowrap bg-cream text-brown font-mono text-xs font-bold uppercase px-3 py-1 border-2 border-brown opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                  View Project →
+                </span>
               </div>
 
               {/* Case Study Info */}
