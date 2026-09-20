@@ -85,6 +85,7 @@ function Contact() {
                   <p className="font-mono text-xs uppercase font-bold text-cream/60">
                     Email
                   </p>
+                  href="mailto:olapiper223@gmail.com"
                   <p className="text-cream font-bold">olapiper223@gmail.com</p>
                 </div>
               </div>
