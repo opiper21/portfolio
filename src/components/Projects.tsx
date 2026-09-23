@@ -33,19 +33,19 @@ function Projects() {
       link: "https://taskflow-olabode.vercel.app",
     },
     {
-      id: "03",
-      title: "Analytics Dashboard",
-      category: "Full Stack",
-      problem:
-        "A marketing agency wasted hours manually compiling client reports.",
-      solution:
-        "Built a real-time dashboard pulling from 5 data sources with export features.",
-      outcome:
-        "Saved the team 15 hours per week; reports went from weekly to live.",
-      tech: ["Next.js", "PostgreSQL", "Chart.js"],
-      color: "bg-mustard",
-      link: "https://github.com/opiper21",
-    },
+   id: "03",
+   title: "Weather App",
+   category: "Frontend",
+   problem:
+    "People want quick, accurate weather without digging through cluttered apps or sites.",
+   solution:
+    "Built a React + TypeScript app that fetches live data from the OpenWeatherMap API, with city search, auto-detected local weather via geolocation, and clear error handling.",
+   outcome:
+    "A fast, responsive weather app deployed live, with the code public on GitHub.",
+   tech: ["React", "TypeScript", "Tailwind", "OpenWeatherMap API"],
+   color: "bg-mustard",
+   link: "https://weather-app-smoky-seven-27.vercel.app",
+   },
     {
       id: "04",
       title: "Social Media App",
