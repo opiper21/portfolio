@@ -4,7 +4,9 @@ function Footer() {
   // 🌐 External links (social profiles)
   const socials = [
     { name: "GitHub", url: "https://github.com/opiper21" },
-    { name: "Email", url: "mailto:sodiqolabode@gmail.com" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/sodiqolabode" },
+    { name: "X", url: "https://x.com/OlabodePiper" },
+    { name: "Email", url: "mailto:olapiper223@gmail.com" },
   ];
 
   // 🏠 In-page navigation (jumps to sections)
