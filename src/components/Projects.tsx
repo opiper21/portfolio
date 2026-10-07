@@ -47,19 +47,16 @@ function Projects() {
    link: "https://weather-app-smoky-seven-27.vercel.app",
    },
     {
-      id: "04",
-      title: "Social Media App",
-      category: "Full Stack",
-      problem:
-        "A niche community had no home after their old platform shut down.",
-      solution:
-        "Shipped a full social app with real-time chat, notifications, and image uploads in 6 weeks.",
-      outcome:
-        "Onboarded 2,000 users in month one with 40% daily active usage.",
-      tech: ["React", "Firebase", "Socket.io"],
-      color: "bg-brown",
-      link: "https://github.com/opiper21",
-    },
+    id: '04',
+    title: 'Worknest — Job Platform',
+    category: 'Full Stack · In Progress',
+    problem: 'Job seekers and recruiters need a clean, fast platform to connect and manage applications.',
+    solution: 'Building a full-stack job-hunting platform with user auth, job listings, applications, and a recruiter dashboard.',
+    outcome: 'Currently in active development — launching soon.',
+    tech: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
+    color: 'bg-brown',
+    link: 'https://github.com/opiper21',
+   },
   ];
 
   return (
