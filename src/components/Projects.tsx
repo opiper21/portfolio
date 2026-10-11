@@ -3,9 +3,23 @@ function Projects() {
   // 📦 YOUR PROJECTS DATA
   // Edit this array whenever you have new projects
   // ========================================
-  const projects = [
+   const projects = [
     {
       id: "01",
+      title: "Pulse — Crypto Dashboard",
+      category: "Frontend",
+      problem:
+        "Crypto and trading products need dashboards that make fast-moving data easy to read at a glance.",
+      solution:
+        "Built a live crypto dashboard in React and TypeScript: real-time prices from the CoinGecko API, a 7-day chart for any selected coin, and a holdings tracker whose total animates as prices change.",
+      outcome:
+        "Deployed live, with smooth motion and the code public on GitHub.",
+      tech: ["React", "TypeScript", "Tailwind", "TanStack Query"],
+      color: "bg-brown",
+      link: "https://pulse-crypto-dashboard-two.vercel.app",
+    },
+    {
+      id: "02",
       title: "Ledgerly — Fintech Dashboard",
       category: "Frontend",
       problem:
@@ -19,7 +33,7 @@ function Projects() {
       link: "https://ledgerly-dashboard.vercel.app",
     },
     {
-      id: "02",
+      id: "03",
       title: "TaskFlow — Task Manager",
       category: "Full Stack",
       problem:
@@ -33,30 +47,19 @@ function Projects() {
       link: "https://taskflow-olabode.vercel.app",
     },
     {
-   id: "03",
-   title: "Weather App",
-   category: "Frontend",
-   problem:
-    "People want quick, accurate weather without digging through cluttered apps or sites.",
-   solution:
-    "Built a React + TypeScript app that fetches live data from the OpenWeatherMap API, with city search, auto-detected local weather via geolocation, and clear error handling.",
-   outcome:
-    "A fast, responsive weather app deployed live, with the code public on GitHub.",
-   tech: ["React", "TypeScript", "Tailwind", "OpenWeatherMap API"],
-   color: "bg-mustard",
-   link: "https://weather-app-smoky-seven-27.vercel.app",
-   },
-    {
-    id: '04',
-    title: 'Worknest — Job Platform',
-    category: 'Full Stack · In Progress',
-    problem: 'Job seekers and recruiters need a clean, fast platform to connect and manage applications.',
-    solution: 'Building a full-stack job-hunting platform with user auth, job listings, applications, and a recruiter dashboard.',
-    outcome: 'Currently in active development — launching soon.',
-    tech: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
-    color: 'bg-brown',
-    link: 'https://github.com/opiper21',
-   },
+      id: "04",
+      title: "Weather App",
+      category: "Frontend",
+      problem:
+        "People want quick, accurate weather without digging through cluttered apps or sites.",
+      solution:
+        "Built a React + TypeScript app that fetches live data from the OpenWeatherMap API, with city search, auto-detected local weather via geolocation, and clear error handling.",
+      outcome:
+        "A fast, responsive weather app deployed live, with the code public on GitHub.",
+      tech: ["React", "TypeScript", "Tailwind", "OpenWeatherMap API"],
+      color: "bg-mustard",
+      link: "https://weather-app-smoky-seven-27.vercel.app",
+    },
   ];
 
   return (
