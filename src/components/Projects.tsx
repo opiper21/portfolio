@@ -60,6 +60,17 @@ function Projects() {
       color: "bg-mustard",
       link: "https://weather-app-smoky-seven-27.vercel.app",
     },
+    {
+    id: '05',
+    title: 'BizzLotz — Directory Concept',
+    category: 'Client Project · Frontend',
+    problem: 'A US founder needed a clean, searchable directory for his 3D harbor platform — fast.',
+    solution: 'Built a React + Tailwind directory with live search, category filters, and view counters.',
+    outcome: 'Delivered live in 24 hours. Founder featured me on X and integrated the code into his platform.',
+    tech: ['React', 'TypeScript', 'Tailwind', 'Vercel'],
+    color: 'bg-teal',
+    link: 'https://bizzlotz-sketch.vercel.app',
+   },
   ];
 
   return (
