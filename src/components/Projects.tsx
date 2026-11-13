@@ -3,9 +3,24 @@ function Projects() {
   // 📦 YOUR PROJECTS DATA
   // Edit this array whenever you have new projects
   // ========================================
-   const projects = [
+  const projects = [
     {
       id: "01",
+      title: "Spendly — Expense Tracker",
+      category: "Full Stack",
+      featured: true,
+      problem:
+        "Most expense apps ask for bank logins or break when you use more than one currency, so people give up tracking.",
+      solution:
+        "Built a full-stack expense tracker in React, TypeScript, Node and MongoDB: JWT auth, a donut chart with date, category and sort filters, recurring transactions, per-transaction currency, and a one-click demo with self-deleting accounts.",
+      outcome:
+        "Deployed live on Vercel, Render and MongoDB Atlas, with the code and README public on GitHub. A user's feedback led to the currency fix.",
+      tech: ["React", "TypeScript", "Node.js", "MongoDB"],
+      color: "bg-teal",
+      link: "https://spendly-expense-tracker-delta.vercel.app",
+    },
+    {
+      id: "02",
       title: "Pulse — Crypto Dashboard",
       category: "Frontend",
       problem:
@@ -19,7 +34,7 @@ function Projects() {
       link: "https://pulse-crypto-dashboard-two.vercel.app",
     },
     {
-      id: "02",
+      id: "03",
       title: "Ledgerly — Fintech Dashboard",
       category: "Frontend",
       problem:
@@ -33,7 +48,7 @@ function Projects() {
       link: "https://ledgerly-dashboard.vercel.app",
     },
     {
-      id: "03",
+      id: "04",
       title: "TaskFlow — Task Manager",
       category: "Full Stack",
       problem:
@@ -47,7 +62,7 @@ function Projects() {
       link: "https://taskflow-olabode.vercel.app",
     },
     {
-      id: "04",
+      id: "05",
       title: "Weather App",
       category: "Frontend",
       problem:
@@ -61,16 +76,19 @@ function Projects() {
       link: "https://weather-app-smoky-seven-27.vercel.app",
     },
     {
-    id: '05',
-    title: 'BizzLotz — Directory Concept',
-    category: 'Client Project · Frontend',
-    problem: 'A US founder needed a clean, searchable directory for his 3D harbor platform — fast.',
-    solution: 'Built a React + Tailwind directory with live search, category filters, and view counters.',
-    outcome: 'Delivered live in 24 hours. Founder featured me on X and integrated the code into his platform.',
-    tech: ['React', 'TypeScript', 'Tailwind', 'Vercel'],
-    color: 'bg-teal',
-    link: 'https://bizzlotz-sketch.vercel.app',
-   },
+      id: "06",
+      title: "BizzLotz — Directory Concept",
+      category: "Client Project · Frontend",
+      problem:
+        "A US founder needed a clean, searchable directory for his 3D harbor platform — fast.",
+      solution:
+        "Built a React + Tailwind directory with live search, category filters, and view counters.",
+      outcome:
+        "Delivered live in 24 hours. Founder featured me on X and integrated the code into his platform.",
+      tech: ["React", "TypeScript", "Tailwind", "Vercel"],
+      color: "bg-teal",
+      link: "https://bizzlotz-sketch.vercel.app",
+    },
   ];
 
   return (
@@ -114,6 +132,11 @@ function Projects() {
               <div
                 className={`relative ${project.color} h-40 border-b-4 border-brown flex items-center justify-center overflow-hidden`}
               >
+                {project.featured && (
+                  <span className="absolute top-3 left-3 z-20 bg-cream text-brown font-mono text-[10px] font-bold uppercase px-2 py-1 border-2 border-brown">
+                    Featured
+                  </span>
+                )}
                 <span className="font-display text-7xl text-cream/30 absolute top-4 right-4">
                   {project.id}
                 </span>
